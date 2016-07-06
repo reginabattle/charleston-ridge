@@ -1,0 +1,140 @@
+
+input[type=date], 
+input[type=datetime], 
+input[type=email], 
+input[type=number], 
+input[type=password], 
+input[type=search], 
+input[type=tel], 
+input[type=text], 
+input[type=time], 
+input[type=url], 
+textarea {
+	background: none;
+	border-radius: 0;
+  border: 1px solid $grey-dark;
+	color: $grey-dark;
+	font-family: $sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 15px 10px;
+	outline: none;
+	-webkit-appearance: none;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+	outline: none;
+	-webkit-appearance: none !important;
+}
+
+
+::-webkit-input-placeholder { 
+	color: $grey-dark;
+}
+
+:-moz-placeholder { 
+	color: $grey-dark;
+}
+
+::-moz-placeholder { 
+	color: $grey-dark;
+}
+
+:-ms-input-placeholder { 
+	color: $grey-dark;
+}
+
+
+select {
+  background: $cream url('../images/layout/arrow-down.png') no-repeat 155px center;
+  color: $grey-dark;
+  cursor: pointer;
+  font-family: $serif;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: inherit;
+  min-width: 164px;
+  outline: none;
+  box-sizing: initial;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.facetwp-type-dropdown {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Gravity forms 
+-------------------------------------- */
+
+.gform_wrapper {
+  margin-top: 0 !important;
+
+  ul {
+    list-style-type: none;
+    margin: 0 !important;
+    padding: 0;
+  }
+
+  li {
+    list-style-type: none;
+    margin-bottom: 30px;
+  }
+
+  input, textarea {
+    padding: 15px 10px !important;
+  }
+
+  textarea {
+    max-width: 600px;
+  }
+
+  input[type="submit"] {
+    padding: 15px !important;
+  }
+
+  label {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    cursor: default;
+  }
+
+  .gform_footer {
+    margin: 0;
+    padding: 0;
+  }
+
+  .button {
+    background: $green-light;
+    color: $cream;
+
+    &:hover {
+      background: $green;
+      color: $cream;
+    }
+  }
+
+  .top_label input.medium, 
+  .top_label select.medium {
+      width: 77.9% !important;
+  }
+
+}
+
+.validation_error,
+.gfield_required {
+  display: none;
+}
+
+.validation_message {
+  color: $red;
+}
+
+.gfield_description {
+  margin-top: 10px;
+}

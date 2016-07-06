@@ -1,0 +1,55 @@
+
+footer {
+	background: $red;
+	color: $cream;
+	padding: 25px 0;
+	text-align: center;
+
+	header {
+		margin-bottom: 20px;
+
+		h1 {
+			background: $red-light;
+			color: $cream;
+			font-family: $serif;
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 24px;
+			display: inline-block;
+			padding: 12px 35px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+
+	a {
+		color: $cream;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.divider {
+		margin-bottom: 25px;
+	}
+
+	.copyright {
+		border-right: 1px solid $cream;
+		padding: 35px 15px 0;
+
+		p {
+			margin-bottom: 5px;
+		}
+
+		img {
+			max-width: 60px;
+			margin-top: 20px;
+		}
+	}
+
+	.inquiry-info {
+		word-wrap: break-word;
+	}
+
+}

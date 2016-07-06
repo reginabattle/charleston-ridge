@@ -1,0 +1,279 @@
+
+
+.available-fp {
+	background-image: url('../images/layout/bg-pineapple.png'); 
+	background-repeat: repeat;
+}
+
+
+/* Filters
+-----------------------------------------------------------*/
+
+.filters {
+	color: $cream;
+
+	h2 {
+		color: $cream;
+		font-family: $serif;
+		font-weight: 700;
+		margin-bottom: 10px;
+		display: block;
+		text-transform: none;
+	}
+
+	li {
+		float: left;
+		display: inline-block;
+		margin-right: 3%;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.facetwp-date {
+		background: $cream;
+		border: none;
+		padding: 9px 10px;
+
+		&:after {
+		  content: "\f078";
+		  color: $grey-dark;
+		  cursor: pointer;
+		  font-family: 'FontAwesome';
+		  font-size: 14px;
+		  position: absolute;
+		  top: 7px;
+		  right: 15px;
+		}
+	}
+
+	.hide {
+		display: block;
+		visibility: hidden;
+	}
+}
+
+
+/* Interactive Floor Plan
+-----------------------------------------------------------*/
+
+body:not(:-moz-handler-blocked) .site-plan-btn.button {
+  	width: 93%;
+}
+
+.fp-filters .button-wrapper {
+	margin-top: 25px;
+}
+
+.site-plan-btn.button {
+	margin: 0 0 5px 0 !important;
+	width: 100%;
+	cursor: pointer;
+
+	&.active {
+		background: none;
+		color: $green;
+
+		&:hover {
+			background: none;
+			color: $green;
+		}
+
+		&:after {
+			content: url('../images/layout/site-map-close.svg');
+			display: inline-block;
+			width: 100%;
+			max-width: 16px;
+			position: absolute;
+			top: 12px;
+			right: 70px;
+		}
+	}
+}
+.site-plan-content {
+	max-height: 0;
+	opacity: 0;
+	overflow: hidden;
+	@include transition-property(all);
+	@include transition-duration(0.6s);
+	@include transition-timing-function(ease-in-out);
+
+	&.open {
+		max-height: 960px;
+		opacity: 1;
+		overflow: initial;
+	}
+}
+
+.hotspots-placeholder {
+	background: $cream;
+	font-family: $serif;
+}
+
+.hotspots-image-container img {
+	display: block;
+	width: 100%;
+	margin: 0;
+}
+
+
+/* Floor Plan (Entry)
+-----------------------------------------------------------*/
+
+.fp-details {
+	background: $cream;
+	margin-bottom: 20px;
+	padding: 25px;
+	text-align: center;
+	box-shadow: 0 5px 5px rgba($grey-dark,0.1);
+
+	h2 {
+		margin-bottom: 20px;
+	}
+
+	span {
+		display: block;
+		font-size: 16px;
+		font-family: $serif;
+	}
+
+	.button {
+		display: block;
+		margin: 20px 0 10px;
+	}
+}
+
+.fp-img {
+
+	&:before {
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		height: 100%;
+	}
+
+	img {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+
+/* Floor Plan (Single)
+-----------------------------------------------------------*/
+
+body.single-floor-plan {
+	
+	.nav-fp a {
+		border-bottom: 1px solid $cream;
+	}
+}
+
+.floor-plan-details {
+	background: $cream;
+	padding: 65px 0;
+	margin-top: 35px;
+
+	h1 {
+		margin: 15px 0;
+	}
+
+	span {
+		display: block;
+		font-size: 16px;
+		font-family: $serif;
+	}
+
+	.fp-img {
+		text-align: center;
+	}
+
+	.button.cream {
+		background: $cream-dark;
+		width: 45%;
+	}
+}
+
+.fp-modal-content {
+
+	h1 {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+}
+
+.fp-img-large {
+	display: block;
+	margin: 0 auto;
+}
+
+/* Available units */
+
+.fp-units {
+	margin: 25px 0 0;
+
+	a {
+		color: $green;
+		font-family: $sans-serif;
+		text-transform: uppercase;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	thead {
+		border-bottom: 1px solid $grey-dark;
+		font-weight: 700;
+
+		th {
+			font-weight: 700;
+			padding: 15px 0;
+		}
+	}
+
+	tr {
+		border-bottom: 1px solid $grey-dark;
+
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+
+	td {
+		padding: 15px 0;
+		width: auto;
+	}
+}
+
+
+/* Other Floor Plans
+-----------------------------------------------------------*/
+
+.other-floor-plans {
+	background-image: url('../images/layout/bg-pineapple.png'); 
+	background-repeat: repeat;
+}
+
+.fp-entry {
+	margin-bottom: 25px;
+
+	.button-wrapper {
+		padding: 0px 20px 15px 0px;
+		margin: 0 auto;
+	}
+
+	.fp-img {
+		min-height: 350px;
+
+		&:before {
+			min-height: 350px;
+		}
+	}
+
+}
+
+
+
+

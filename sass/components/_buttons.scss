@@ -1,0 +1,66 @@
+
+
+.button-wrapper {
+  display: block;
+  width: 80%;
+  position: relative;
+  padding: 0px 20px 15px 0px;
+  margin: 0 auto;
+  -moz-border-image: url('../images/layout/button-accent-blue.svg') 0 stretch;
+  -webkit-border-image: url('../images/layout/button-accent-blue.svg') 0 stretch;
+  -o-border-image: url('../images/layout/button-accent-blue.svg') 0 stretch;
+  border-image: url('../images/layout/button-accent-blue.svg') 0 fill stretch;
+
+  &.cream {
+    -moz-border-image: url('../images/layout/button-accent-cream.svg') 0 stretch;
+    -webkit-border-image: url('../images/layout/button-accent-cream.svg') 0 stretch;
+    -o-border-image: url('../images/layout/button-accent-cream.svg') 0 stretch;
+    border-image: url('../images/layout/button-accent-cream.svg') 0 fill stretch;
+  }
+
+  .button {
+    display: block;
+    margin: 20px 0 6px;
+  }
+}
+
+.button,
+input[type="submit"] {
+	background: $cream;
+  border: none;
+	color: $grey-dark;
+	display: inline-block;
+	font-family: $sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	margin-top: 20px;
+	padding: 10px 25px;
+  text-align: center;
+  text-transform: uppercase;
+	 
+  @include transition-property(all);
+  @include transition-duration(0.3s);
+  @include transition-timing-function(ease-in-out);
+
+  &.green {
+  	background: $green-light;
+  	color: $cream;
+  }
+}
+
+.button:hover,
+input[type="submit"]:hover  {
+  background: $cream;
+  color: $grey-dark;
+  text-decoration: none !important;
+
+  &:hover {
+  	background: $cream-dark;
+  }
+
+  &.green {
+  	background: $green;
+  	color: $cream;
+  }
+}
+
